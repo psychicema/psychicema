@@ -209,7 +209,116 @@ class="post-11 page type-page status-publish ast-article-single" id="post-11" it
 
    <div id="slider-inhalt"  style="margin-top:2px; margin-bottom:0px;">
   
-</div> 
+</div> <style>#marquee {
+    padding: 50px 0px;
+    width: 100%;
+}
+
+#marquee .container {
+    overflow: hidden;
+    width: 100%;
+}
+
+#marquee .pic-container {
+    display: flex;
+    animation: marquee 10s infinite linear;
+}
+
+/* #marquee:hover {
+    animation-play-state: paused;
+} */
+
+#marquee .pic-container .pic {
+    flex-basis: 20%;
+    flex-shrink: 0;
+}
+
+#marquee img {
+    width: 100%;
+    object-fit: cover;
+    border: 1px solid rgba(238, 231, 231, 0.9);
+}
+
+@media (max-width: 1024px) {
+    #marquee .pic-container .pic {
+        flex-basis: 25%;
+    }
+}
+
+@media (max-width: 768px) {
+    #marquee .pic-container .pic {
+        flex-basis: 33.33%;
+    }
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@media (max-width: 1024px) {
+    @keyframes marquee {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-125%);
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    @keyframes marquee {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-186.65%);
+        }
+    }
+} </style>
+ <div id="marquee">
+        <div class="container">
+            <div class="pic-container">
+                <div class="pic">
+                    <img src="https://i.postimg.cc/k5TDQZz5/1.jpg" alt="img">
+                </div>
+                <div class="pic">
+                    <img src="https://i.postimg.cc/nVg0xVTn/2.jpg" alt="img">
+                </div>
+                <div class="pic">
+                    <img src="https://i.postimg.cc/KY0DHmRS/3.jpg" alt="img">
+                </div>
+                <div class="pic">
+                    <img src="https://i.postimg.cc/1RnrvhS2/4.jpg" alt="img">
+                </div>
+                <div class="pic">
+                    <img src="https://i.postimg.cc/DwFQfSG3/5.jpg" alt="img">
+                </div>
+                <div class="pic">
+                    <img src="https://i.postimg.cc/Dy3L5SB4/6.jpg" alt="img">
+                </div>
+                <div class="pic">
+                    <img src="https://i.postimg.cc/SR6XHGD2/7.jpg" alt="img">
+                </div>
+                <div class="pic">
+                    <img src="https://i.postimg.cc/htjj0gW7/8.jpg" alt="img">
+                </div>
+                <div class="pic">
+                    <img src="https://i.postimg.cc/XYpjC8df/9.jpg" alt="img">
+                </div>
+                <div class="pic">
+                    <img src="https://i.postimg.cc/MH6xKbzj/10.jpg" alt="img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+					
 <br><br>
  
  
