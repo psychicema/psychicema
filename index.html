@@ -37,6 +37,13 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14
 </script>
 	<!--Start of Tawk.to Script-->
 <script type="text/javascript">
+	
+$(document).ready(function(){
+  var marquee_width = $(".marquee-content-primary").width();
+  document.documentElement.style.setProperty('--marquee-padding', marquee_width + 'px');
+});
+
+
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 (function(){
 var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
